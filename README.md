@@ -27,6 +27,8 @@ There are 2 ways to build this project with the Makefile:
 1. make elevator
 2. make elevator graceful=1
 
+I have also uploaded the binaries in case there are unexpected build issues observed (elevator and elevator_graceful)
+
 "make elevator" means code will be compiled such that user input
 will be accepted as is, and upon detection of badinput (eg -3, INT_MAX+1, asdf)
 the program will terminate immediately. It will also provide a reason
