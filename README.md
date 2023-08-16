@@ -1,6 +1,6 @@
 # Outside Analytics Elevator Project
 
-This program will simulare an elevator by accepting the floors to visit as input, and outputing the travel time followed by all floors visited.
+This program will simulate an elevator by accepting the floors to visit as input, and outputing the travel time followed by all floors visited.
 
 Several key assumptions were made during implementation:
 
