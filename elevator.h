@@ -73,7 +73,6 @@ private:
 	int curr_floor;
 	/* choosing uint64_t for travel time to allow for large number of input floors */
 	uint64_t travel_time;
-	/* vector<int> visited_floors;*/
 };
 
 
