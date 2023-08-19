@@ -36,6 +36,7 @@ to be constant (10)
 #define ELEVATOR_H
 
 #include <stdio.h>
+#include <cstdint>
 #include <iostream>	/* std::cout, std::endl */
 #include <string>	/* std::string, stoi() */
 #include <vector>	/* std::vector */
@@ -44,7 +45,7 @@ to be constant (10)
 #include <cstdlib>	/* std::abs */
 #include <sstream>	/* std::istringstream */
 
-#define TRAVEL_TIME_PER_FLOOR 10
+#define TRAVEL_TIME_PER_FLOOR (uint64_t)10
 
 using namespace std;
 
