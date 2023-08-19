@@ -108,7 +108,7 @@ bool Elevator::move(int new_floor)
 	/* update distance traveled. Need to guard against uint64_t overflow */
 
 	/* if travel_time overflow occurs, throw an error */
-	if (ULLONG_MAX - travel_time < (TRAVEL_TIME_PER_FLOOR*diff))
+	if (ULLONG_MAX - travel_time < TRAVEL_TIME_PER_FLOOR*diff)
 	{
 		result = false;
 	}
@@ -238,7 +238,12 @@ int main(int argc, char const *argv[])
 		{
 			bad_input = true;
 			initial_args_correct = false;
-			break;
+
+			/* I was originally breaking here, but opting to comment
+			it out so that user can see how many bad inputs they provided
+			rather than only seeing the first one */
+
+			/* break; */
 		}
 		/* verify floor is less than INT_MAX */
 		else
@@ -253,7 +258,12 @@ int main(int argc, char const *argv[])
 			{
 				bad_input = true;
 				initial_args_correct = false;
-				break;
+
+				/* I was originally breaking here, but opting to comment
+				it out so that user can see how many bad inputs they provided
+				rather than only seeing the first one */
+
+				/*break;*/
 			}
 		}
 	}
