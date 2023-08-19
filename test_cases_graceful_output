@@ -1,12 +1,12 @@
-Test case output (make elevator graceful=1)
+Test cases (make elevator graceful=1)
 
-Timothys-iMac:elevator_project timpressive$ ./elevator 1 2 3
+Timothys-iMac:oa_elevator_project timpressive$ ./elevator 1 2 3
 20,1,2,3
-Timothys-iMac:elevator_project timpressive$ ./elevator 1 2 3 -4 5
+Timothys-iMac:oa_elevator_project timpressive$ ./elevator 1 2 3 -4 5
 floor -4 is not a valid number.
 Bad input detected. Please enter the floors you wish to visit (space separated). You may only enter non-negative numbers: 1 2 3 4 5
 40 1 2 3 4 5
-Timothys-iMac:elevator_project timpressive$ ./elevator 4 5t 6
+Timothys-iMac:oa_elevator_project timpressive$ ./elevator 4 5t 6
 floor 5t is not a valid number.
 Bad input detected. Please enter the floors you wish to visit (space separated). You may only enter non-negative numbers: 4 5 asdf 8 9
 floor asdf is not a valid number.
@@ -14,18 +14,18 @@ Bad input detected. Please enter the floors you wish to visit (space separated).
 floor -3 is not a valid number.
 Bad input detected. Please enter the floors you wish to visit (space separated). You may only enter non-negative numbers: 3 0 2
 50 3 0 2
-Timothys-iMac:elevator_project timpressive$ ./elevator 0
+Timothys-iMac:oa_elevator_project timpressive$ ./elevator 0
 0,0
-Timothys-iMac:elevator_project timpressive$ ./elevator
+Timothys-iMac:oa_elevator_project timpressive$ ./elevator
 0
-Timothys-iMac:elevator_project timpressive$ ./elevator 10 100000 100000000000
+Timothys-iMac:oa_elevator_project timpressive$ ./elevator 10 100000 100000000000
 floor  100000000000 exceeds maxmimum allowed value 2147483647
 Bad input detected. Please enter the floors you wish to visit (space separated). You may only enter non-negative numbers: 1 10 1000
 9990 1 10 1000
-Timothys-iMac:elevator_project timpressive$ ./elevator 10 100000 -3 100000000000
+Timothys-iMac:oa_elevator_project timpressive$ ./elevator 10 100000 -3 100000000000
 floor -3 is not a valid number.
+floor  100000000000 exceeds maxmimum allowed value 2147483647
 Bad input detected. Please enter the floors you wish to visit (space separated). You may only enter non-negative numbers: 4
 0 4
-Timothys-iMac:elevator_project timpressive$ ./elevator 10 9 2 5 5 8 8 9
+Timothys-iMac:oa_elevator_project timpressive$ ./elevator 10 9 2 5 5 8 8 9
 150,10,9,2,5,5,8,8,9
-Timothys-iMac:elevator_project timpressive$ 
