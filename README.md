@@ -40,4 +40,4 @@ as many attempts as needed to correct their input
 
 Here's a list of nice-to-have's that I opted not to implement:
 * Enhanced user input correction for graceful=1 (ie, asking for confirmation that the corrected input is indeed correct)
-* Upon receiving a list of floors with > 1 bad input, echoing back all the bad inputs rather than just the first bad input encountered
+* Script for validation of overflow protection enforced on distance travelled
