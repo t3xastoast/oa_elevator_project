@@ -13,7 +13,7 @@
 # 2. "make elevator graceful=1"
 
 # "make elevator" means code will be compiled such that user input
-# will be accepted as is, and upon detection of badinput (eg -3, INT_MAX+1, asdf)
+# will be accepted as is, and upon detection of bad input (eg -3, INT_MAX+1, asdf)
 # the program will terminate immediately. It will also provide a reason
 # why the input (the first bad input detected) isn't correct
 
