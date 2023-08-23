@@ -280,7 +280,6 @@ int main(int argc, char const *argv[])
 #else
 
 	string new_input = "";
-	string confirmation = "";
 	bool valid_y = false;
 	bool valid_n = false;
 
