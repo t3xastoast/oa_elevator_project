@@ -279,7 +279,6 @@ int main(int argc, char const *argv[])
 
 #else
 
-	bool input_fixed = !bad_input;
 	string new_input = "";
 	string confirmation = "";
 	bool valid_y = false;
